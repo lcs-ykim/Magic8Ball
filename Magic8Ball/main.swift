@@ -27,68 +27,29 @@ print("")
 print("You said: \(input)")
 print("")
 
-// Select a random value
-let value = Int.random(in: 1...20)
-
-// Provide a response based on the random value
-// BASED UPON: https://en.wikipedia.org/wiki/Magic_8-Ball#Possible_answers
-// TIP: Use the library to get code templates
-//      Command-Shift-L
-//
-var response = ""
-
-switch value {
-    
-// Affirmative answers
-case 1:
-    response = "It is certain"
-case 2:
-    response = "It is decidely so."
-case 3:
-    response = "Without a doubt."
-case 4:
-    response = "Yes definitely."
-case 5:
-    response = "You may rely on it."
-case 6:
-    response = "As I see it, yes."
-case 7:
-    response = "Most likely."
-case 8:
-    response = "Outlook good."
-case 9:
-    response = "Yes."
-case 10:
-    response = "Signs point to yes."
-    
-// Non-committal answers
-case 11:
-    response = "Reply hazy, try again."
-case 12:
-    response = "Ask again later."
-case 13:
-    response = "Better not to tell you now."
-case 14:
-    response = "Cannot predict now."
-case 15:
-    response = "Concentrate and ask again."
-    
-// Negative answers
-case 16:
-    response = "Don't count on it."
-case 17:
-    response = "My reply is no."
-case 18:
-    response = "My sources say no."
-case 19:
-    response = "Outlook not so good."
-case 20:
-    response = "Very doubtful."
-    
-default:
-    // Do nothing
-    break
-}
+// List of possible responses
+let responses = [
+    "It is certain",
+    "It is decidely so.",
+    "Without a doubt.",
+    "Yes definitely.",
+    "You may rely on it.",
+    "As I see it, yes.",
+    "Most likely.",
+    "Outlook good.",
+    "Yes.",
+    "Signs point to yes.",
+    "Reply hazy, try again.",
+    "Ask again later.",
+    "Better not to tell you now.",
+    "Cannot predict now.",
+    "Concentrate and ask again.",
+    "Don't count on it.",
+    "My reply is no.",
+    "My sources say no.",
+    "Outlook not so good.",
+    "Very doubtful."
+    ]
 
 // Provide the advice
-print(response)
+print(responses.randomElement()!)
