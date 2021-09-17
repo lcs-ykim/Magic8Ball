@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F1B036A26F4EBDB00BA6936 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B036926F4EBDB00BA6936 /* main.swift */; };
+		7F1B037226F4F01D00BA6936 /* Magic8Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B037126F4F01D00BA6936 /* Magic8Ball.swift */; };
+		7F1B039126F4F31600BA6936 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1B039026F4F31600BA6936 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		7F1B036626F4EBDB00BA6936 /* Magic8Ball */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Magic8Ball; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1B036926F4EBDB00BA6936 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7F1B037126F4F01D00BA6936 /* Magic8Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8Ball.swift; sourceTree = "<group>"; };
+		7F1B039026F4F31600BA6936 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,19 @@
 		7F1B036826F4EBDB00BA6936 /* Magic8Ball */ = {
 			isa = PBXGroup;
 			children = (
+				7F1B037026F4EFD400BA6936 /* Model */,
 				7F1B036926F4EBDB00BA6936 /* main.swift */,
 			);
 			path = Magic8Ball;
+			sourceTree = "<group>";
+		};
+		7F1B037026F4EFD400BA6936 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F1B037126F4F01D00BA6936 /* Magic8Ball.swift */,
+				7F1B039026F4F31600BA6936 /* Session.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1B036A26F4EBDB00BA6936 /* main.swift in Sources */,
+				7F1B037226F4F01D00BA6936 /* Magic8Ball.swift in Sources */,
+				7F1B039126F4F31600BA6936 /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

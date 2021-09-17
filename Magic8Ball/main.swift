@@ -27,29 +27,10 @@ print("")
 print("You said: \(input)")
 print("")
 
-// List of possible responses
-let responses = [
-    "It is certain",
-    "It is decidely so.",
-    "Without a doubt.",
-    "Yes definitely.",
-    "You may rely on it.",
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not to tell you now.",
-    "Cannot predict now.",
-    "Concentrate and ask again.",
-    "Don't count on it.",
-    "My reply is no.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful."
-    ]
+// Start an advice session
+var currentSession = Session(question: input)
+// Use the static function right from the Magic8Ball type (no instance required!)
+currentSession.response = Magic8Ball.getResponse()
 
-// Provide the advice
-print(responses.randomElement()!)
+// Provide the advice by making an instance of the Magic8Ball type and ten getting a response
+print(currentSession.response)
