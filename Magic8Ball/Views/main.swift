@@ -7,6 +7,9 @@
 
 import Foundation
 
+// Make an instance of the view model (to store questions and responses)
+var advisor = AdviceViewModel()
+
 // Program name
 print("MAGIC 8 BALL")
 print("============")
@@ -27,10 +30,11 @@ print("")
 print("You said: \(input)")
 print("")
 
-// Start an advice session
-var currentSession = Session(question: input)
-// Use the static function right from the Magic8Ball type (no instance required!)
-currentSession.response = Magic8Ball.getResponse()
-
 // Provide the advice by making an instance of the Magic8Ball type and ten getting a response
-print(currentSession.response)
+print(advisor.provideResponseFor(givenQuery: input))
+
+// Iterate over all past sessions
+//for priorSession in advisor.sessions {
+//    print(priorSession.question)
+//    print(priorSession.response)
+//}
